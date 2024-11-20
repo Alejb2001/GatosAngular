@@ -1,5 +1,5 @@
- import { Component } from '@angular/core';
- import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 
  @Component({
    selector: 'app-root',
@@ -9,18 +9,5 @@
    styleUrl: './app.component.css'
  })
  export class AppComponent {
-   title = 'proyectoAPI';
+   title = 'GatosAngular';
  }
-
-//import { Component } from '@angular/core';
-//import { CatSearchComponent } from './components/cat-search/cat-search.component';
-
-//@Component({
-//  selector: 'app-root',
-//  standalone: true,
-//  template: `
-//    <h1>Busqueda de Razas de Gato con Cat API</h1>
-//    <app-cat-search></app-cat-search>`,
-//  imports: [CatSearchComponent]
-//})
-//export class AppComponent {}
