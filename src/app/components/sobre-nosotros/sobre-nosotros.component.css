@@ -34,4 +34,28 @@
     color: #34495E;
     margin-bottom: 8px;
   }
+
+  .imagenes-container {
+    display: flex;
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    gap: 20px; /* Espacio entre imágenes */
+  }
+
+  .imagen-container {
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .imagen-container img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    object-fit: cover;
+  }
+
+  .imagen-container img:hover {
+    transform: scale(1.2); /* Aumenta el tamaño de la imagen */
+  }
   
