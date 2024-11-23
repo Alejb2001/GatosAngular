@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     margin: 20px 0;
+    height: 90%;
   }
   
   input[type="text"] {
@@ -17,7 +18,7 @@
   
   input[type="text"]:focus {
     outline: none;
-    border-color: #ff6f61;
+    border-color: #005ca3;
   }
   
   /* Contenedor de resultados */
