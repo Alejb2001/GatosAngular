@@ -12,7 +12,7 @@
     <p>Ejemplos de razas populares: Siamese, Persian, Maine Coon, Bengal, Aegean, Abyssinian, Birman</p>
   </div>
   
-  <div *ngIf="hasSearched">
+  <div *ngIf="hasSearched" class="contenedor">
     <div *ngIf="filteredBreeds.length > 0; else noResults" class="listaRazas">
       <div *ngFor="let breed of filteredBreeds" class="tarjetaRaza">
         <h3>{{ breed.name }}</h3>

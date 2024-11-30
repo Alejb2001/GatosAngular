@@ -35,42 +35,47 @@
     <!-- Imagen 1 -->
     <div class="imagen-container">
       <a href="https://www.facebook.com/lufwatschnell?locale=es_LA" target="_blank">
-      <img id="imagen1" src="./assets/img/gato_gris.png" alt="Imagen 1" 
-           onmouseover="cambiarImagen('imagen1', 'alejandro.png')" 
-           onmouseout="restaurarImagen('imagen1', 'gato_gris.png')">
+      <img id="imagen1" src="./assets/img/gato_gris.PNG" alt="Imagen 1" 
+           onmouseover="cambiarImagen('imagen1', './assets/img/alejandro.PNG')" 
+           onmouseout="restaurarImagen('imagen1', './assets/img/gato_gris.PNG')">
           </a>
     </div>
     
     <!-- Imagen 2 -->
-    <div class="imagen-container">
+    <div class="imagen-container">  
       <a href="https://www.facebook.com/pepe.chavarria.7?locale=es_LA" target="_blank">
-      <img id="imagen2" src="gato_blanco.png" alt="Imagen 2" 
-           onmouseover="cambiarImagen('imagen2', 'santos.jpg')" 
-           onmouseout="restaurarImagen('imagen2', 'gato_blanco.png')">
+      <img id="imagen2" src="./assets/img/gato_blanco.PNG" alt="Imagen 2" 
+           onmouseover="cambiarImagen('imagen2', './assets/img/santos.JPG')" 
+           onmouseout="restaurarImagen('imagen2', './assets/img/gato_blanco.PNG')">
           </a>
     </div>
 
     <!-- Imagen 3 -->
     <div class="imagen-container">
       <a href="https://www.facebook.com/felix.mancinas.9/?locale=es_LA" target="_blank">
-      <img id="imagen3" src="gato_naranja.png" alt="Imagen 3" 
-           onmouseover="cambiarImagen('imagen3', 'felix.png')" 
-           onmouseout="restaurarImagen('imagen3', 'gato_naranja.png')">
+      <img id="imagen3" src="./assets/img/gato_naranja.PNG" alt="Imagen 3" 
+           onmouseover="cambiarImagen('imagen3', './assets/img/felix.PNG')" 
+           onmouseout="restaurarImagen('imagen3', './assets/img/gato_naranja.PNG')">
           </a>
     </div>
   </div>
 
   <script>
-    // Función para cambiar la imagen al pasar el mouse
-    function cambiarImagen(id, nuevaSrc) {
-      document.getElementById(id).src = nuevaSrc;
+    function cambiarImagen(idImagen, nuevaSrc) {
+        const imagen = document.getElementById(idImagen);
+        if (imagen) {
+            imagen.src = nuevaSrc;
+        }
     }
 
-    // Función para restaurar la imagen original
-    function restaurarImagen(id, originalSrc) {
-      document.getElementById(id).src = originalSrc;
+    function restaurarImagen(idImagen, srcOriginal) {
+        const imagen = document.getElementById(idImagen);
+        if (imagen) {
+            imagen.src = srcOriginal;
+        }
     }
-  </script>
+</script>
+
 
   </div>
   
